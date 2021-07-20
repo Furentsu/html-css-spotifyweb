@@ -4,25 +4,20 @@
     box-sizing: border-box;
 }
 
-.macro-container {
+.wrapper {
     width: 100%;
     height: 100vh;
 }
 
-/* ----------- Navbar laterale ----------- */
+        /* ----------- Navbar laterale ----------- */
 
 .side-navbar {
     width: 230px;
-    height: 88vh;
+    height: calc(100% - 100px);
     padding-left: 12px;
+    overflow-y: auto;
     /* Remove */
     border: 1px solid red;
-}
-
-.side-navbar img {
-    filter: invert();
-    width: 65%;
-    padding: 20px 0;
 }
 
 .icon > .far,
@@ -32,18 +27,18 @@
     
 }
 
-/* ----------- Header top ----------- */
+        /* ----------- Call to action ----------- */
 
-.header-top {
+.cta {
     width: calc(100% - 230px);
-    height: 12vh;
+    height: 80px;
     text-align: right;
 
     /* Remove */
     border: 1px solid blue;
 }
 
-.header-top > button {
+.cta > button {
     padding: 10px;
     display: inline-block;
     margin: 20px;
@@ -52,20 +47,70 @@
 
 
 
+  
+        /* ----------- Main -----------  */
 
-/* ----------- Main ----------- */
+.main-container {
+    width: calc(100% - 230px);
+    height: calc(100vh - 180px);
+    overflow-y: auto;
+
+    /* Remove */
+    border: 1px solid violet;
+}
+
+/* Top */
+
+.main-navbar {
+    width: 100%;
+    text-align: center;
+}
+
+.navbar-options li {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* Recently Played */
+
+.recent {
+    width: 100%;
+}
+
+.recent-options-container {
+   justify-content: space-between;
+}
+
+.recent-option {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: calc(100% / 5);
+}
+
+.recent-option-image-container {
+    width: 50%;
+    
+}
+
+.recent-option-image-container img {
+    width: 100%;
+}
+
+        /*  ----------- Footer -----------  */
+
+.footer-content {
+    width: 100%;
+    height: 100px;
+
+    /* Remove */
+    border: 1px solid green;
+}
 
 
 
-
-
-/* ----------- Footer ----------- */
-
-
-
-
-
-/* ----------- Regole generali ----------- */
+        /* ----------- Regole generali ----------- */
 
 .clearfix::after {
     content: '';
@@ -81,4 +126,20 @@
     float: right;
 }
 
-.flex
+.flex {
+    display: flex;
+}
+
+        /* ----------- ID ----------- */
+
+/*  Navbar laterale  */
+
+#logo {
+   height: 80px;
+}
+
+#logo img {
+    filter: invert();
+    width: 65%;
+    padding: 20px 0;
+}
