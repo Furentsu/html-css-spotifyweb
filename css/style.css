@@ -103,7 +103,51 @@
     border: 1px solid green;
 }
 
+.footer-content-container {
+    height: 100%;
+}
 
+/* LEFT */
+
+.footer-content-left {
+    width: 20%;
+    height: 100%;
+    align-items: center;
+    /* justify-content: ? ; */
+}
+
+.footer-image-container {
+    width: 70px;
+    height: 70px;
+}
+
+.footer-content-left img {
+    width: 100%;
+}
+
+/* CENTER */
+
+.footer-content-center {
+    width: 60%;
+}
+
+.footer-center-top,
+.footer-center-bottom {
+    height: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.playbar {
+    width: 50%;
+    height: 3px;
+    background-color: grey;
+}
+/* RIGHT */
+
+.footer-content-right {
+    width: 20%;
+}
 
         /* ----------- Regole generali ----------- */
 
@@ -137,4 +181,10 @@
     filter: invert();
     width: 65%;
     padding: 20px 0;
+}
+
+/*  Footer  */
+
+.footer-song-title {
+    flex-direction: column;
 }
