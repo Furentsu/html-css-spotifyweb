@@ -23,7 +23,7 @@
 .icon > img {
     width: 10%;
     filter: invert();
-    vertical-align: middle;
+    vertical-align: bottom;
 }
 
         /* ----------- Call to action ----------- */
@@ -139,14 +139,16 @@
 }
 
 .playbar {
-    width: 50%;
+    width: 35%;
     height: 3px;
     background-color: grey;
 }
+
 /* RIGHT */
 
 .footer-content-right {
     width: 20%;
+    align-items: center;
 }
 
         /* ----------- Regole generali ----------- */
