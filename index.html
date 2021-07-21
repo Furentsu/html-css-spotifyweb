@@ -14,14 +14,14 @@
     <div class="wrapper clearfix">
 
         <!-- Navbar laterale -->
-        <nav class="side-navbar fl">
+        <nav class="side-navbar fl flex">
             <div id="logo">
                 <img src="img/logo.svg" alt="Spotify's logo">
             </div>
             
             <div class="icon">
                 <img src="img/home.svg" alt="">
-                <span>Home</span>
+                <span id="user-home">Home</span>
             </div>
 
             <div class="icon">
@@ -34,7 +34,7 @@
                 <span>La tua libreria</span>
             </div>
 
-            <h4>PLAYLIST</h4>
+            <h4 id="playlist-section">PLAYLIST</h4>
 
             <div class="icon">
                 <i class="fas fa-plus"></i>
@@ -51,19 +51,22 @@
                 <div class="playlist-name">Nome Playlist</div>
             </div>
             
-            <div class="icon">
-                <img id="download-icon" src="img/download.svg" alt="">
-                <span>Installa app</span>
-            </div>
+            <div class="flex bottom-navbar">
+                <div class="icon">
+                    <img id="download-icon" src="img/download.svg" alt="">
+                    <span>Installa app</span>
+                </div>
 
-            <div class="icon">
-                <img id="profile-image" src="img/profile.svg" alt="">
-                <span>John Doe</span>
+                <div class="icon">
+                    <img id="profile-image" src="img/profile.svg" alt="">
+                    <span id="username">John Doe</span>
+                </div>
+
             </div>
         </nav>
 
         <!-- Call to action -->
-        <div class="cta fl">
+        <div class="call-to-action fl">
             <button type="button">EFFETTUA L'UPGRADE</button>
         </div>
         
