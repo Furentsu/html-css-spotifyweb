@@ -146,10 +146,31 @@
 
 .option-image-container {
     width: 70%;
+    position: relative;
 }
 
 .option-image-container img {
     width: 100%;
+    display: block;
+}
+
+.option:hover .overlay {
+    display: block;
+}
+
+.overlay > .fa-play-circle {
+    color: white;
+    font-weight: 900;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 4em;
+}
+
+.main-section:nth-of-type(4) .option:hover .overlay {
+    display: block;
+    border-radius: 50%;
 }
 
 .main-section:nth-of-type(4) .option-image-container img {
@@ -255,6 +276,16 @@
 
 .flex {
     display: flex;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    display: none;
 }
 
         /* ----------- ID ----------- */
