@@ -14,17 +14,49 @@
 .side-navbar {
     width: 230px;
     height: calc(100% - 100px);
+    background-color: black;
     padding-left: 12px;
     overflow-y: auto;
-    /* Remove */
-    border: 1px solid red;
 }
 
+.icon {
+    padding: 5px 0;
+}
+
+.side-navbar h4 {
+    padding: 20px 0 3px;
+}
+
+.icon span,
+.playlist-name {
+    color: grey;
+}
+
+.playlist-name {
+    padding: 8px 0;
+}
+
+
+
 .icon > img {
-    width: 10%;
-    filter: invert();
+    width: 12%;
+    color: white;
     vertical-align: bottom;
 }
+
+.side-navbar div:nth-of-type(2) span,
+.side-navbar div:nth-of-type(15) span,
+.side-navbar h4 {
+    color: white;
+}
+
+.side-navbar div:nth-of-type(5) .fa-plus {
+    font-size: 20px;
+    padding: 10px;
+    margin-right: 5px;
+    background-color: lightgrey;
+} 
+
 
         /* ----------- Call to action ----------- */
 
@@ -180,13 +212,27 @@
 }
 
 #logo img {
-    filter: invert();
     width: 65%;
     padding: 20px 0;
 }
 
+#playlist-container .playlist-name:nth-child(7) {
+    padding-bottom: 150px;
+}
+
+#profile-image {
+    background-color: grey;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+#download-icon {
+
+}
+
 /*  Footer  */
 
-.footer-song-title {
+#footer-song-title {
     flex-direction: column;
 }
