@@ -16,9 +16,9 @@
     width: 230px;
     height: calc(100% - 80px);
     background-color: black;
-    padding-left: 15px;
     flex-direction: column;
     justify-content: space-between;
+    overflow: hidden;
 }
 
 .icon {
@@ -379,9 +379,13 @@
    height: 80px;
 }
 
-#logo img {
+#big-logo {
     width: 65%;
     padding: 20px 0;
+}
+
+#small-logo {
+    display: none;
 }
 
 #profile-image {
@@ -412,7 +416,7 @@
 }
 
 #playlist-container {
-    height: 55%;
+    flex-grow: 1;
     overflow-y: auto;
 }
 
@@ -514,11 +518,74 @@
   }
 
   @media screen and (max-width: 850px) {
+    .option {
+        width: calc(100% / 2);
+    }
+
+    .option span {
+        padding-bottom: 20px;
+    }
+
+    .option h3 {
+        font-size: .9em;
+    }
+
+    .main-section h2 {
+        padding: 10px 0 20px 3.5%;
+    }
+    
+    .main-section p {
+        padding: 0 0 40px 3.5%;
+    }
+
     .footer-content-left,
     .footer-content-right {
         width: 50%;
     }
    
+    #footer-song-title {
+        padding-right: 5px;
+    }
+  }
+
+  @media screen and (max-width: 660px) {
+    .side-navbar span,
+    .playlist-name,
+    #playlist-section,
+    #big-logo,
+    .fa-plus {
+        display:none;
+    }
+
+    .bottom-navbar .icon:nth-child(1) {
+        border: none;
+    }
+
+    #small-logo,
+    .icon img,
+    #download-icon {
+        display: block;
+        margin: auto;
+        width: 50%;
+    }
+   
+    #small-logo {
+        padding-top: 20px;
+    }
+
+    .side-navbar {
+        width: 50px;
+        text-align: center;
+    }
+
+    .icon {
+        text-align: center;
+    }
+
+    .main-container,
+    .call-to-action {
+        width: calc(100% - 50px);
+    }
   }
 
  
