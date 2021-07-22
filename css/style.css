@@ -507,49 +507,19 @@
         padding: 0 0 40px 2.3%;
     }
 
-    #footer-song-title h4 {
-        font-size: .9em;
-    }
-    
-    #footer-song-title span {
-        font-size: .9em;
-    }
-
-    .footer-image-container {
-        width: 35px;
-        height: 35px;
-    }
-  }
-
-  @media screen and (max-width: 1050px) {
-    
-    #footer-song-title h4 {
-        font-size: .8em;
-    }
-    
-    #footer-song-title span {
-        font-size: .8em;
-    }
-
-    .footer-image-container {
-        width: 30px;
-        height: 30px;
+    .footer-content-left,
+    .footer-content-right {
+        width: 30%;
     }
   }
 
   @media screen and (max-width: 850px) {
-    
-    #footer-song-title h4 {
-        font-size: .7em;
+    .footer-content-left,
+    .footer-content-right {
+        width: 50%;
     }
-    
-    #footer-song-title span {
-        font-size: .7em;
-    }
-
-    .footer-image-container {
-        width: 25px;
-        height: 25px;
-    }
+   
   }
+
+ 
   
