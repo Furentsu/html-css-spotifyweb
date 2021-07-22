@@ -161,6 +161,7 @@
 
 .options-container {
     margin-bottom: 25px;
+    flex-wrap: wrap;
 }
 
 .option {
@@ -240,6 +241,7 @@
     width: 50px;
     height: 50px;
     margin: 0 10px 0;
+    justify-content: center;
 }
 
 .footer-content-left img {
@@ -422,7 +424,7 @@
 
 #footer-song-title {
     flex-direction: column;
-    margin-right: 20px;
+    padding-right: 25px;
 }
 
 #footer-song-title h4 {
@@ -459,3 +461,95 @@
     height: 50px;
 }
 
+/* -------------------MEDIA QUERIES------------------- */
+
+@media screen and (max-width: 1400px) {
+    .option {
+        width: calc(100% / 4);
+    }
+
+    .option span {
+        padding-bottom: 20px;
+    }
+
+    .option h3 {
+        font-size: 1em;
+    }
+
+    .main-section h2 {
+        padding: 10px 0 20px 1.7%;
+    }
+    
+    .main-section p {
+        padding: 0 0 40px 1.7%;
+    }
+  }
+
+
+  @media screen and (max-width: 1050px) {
+    .option {
+        width: calc(100% / 3);
+    }
+
+    .option span {
+        padding-bottom: 20px;
+    }
+
+    .option h3 {
+        font-size: .9em;
+    }
+
+    .main-section h2 {
+        padding: 10px 0 20px 2.3%;
+    }
+    
+    .main-section p {
+        padding: 0 0 40px 2.3%;
+    }
+
+    #footer-song-title h4 {
+        font-size: .9em;
+    }
+    
+    #footer-song-title span {
+        font-size: .9em;
+    }
+
+    .footer-image-container {
+        width: 35px;
+        height: 35px;
+    }
+  }
+
+  @media screen and (max-width: 1050px) {
+    
+    #footer-song-title h4 {
+        font-size: .8em;
+    }
+    
+    #footer-song-title span {
+        font-size: .8em;
+    }
+
+    .footer-image-container {
+        width: 30px;
+        height: 30px;
+    }
+  }
+
+  @media screen and (max-width: 850px) {
+    
+    #footer-song-title h4 {
+        font-size: .7em;
+    }
+    
+    #footer-song-title span {
+        font-size: .7em;
+    }
+
+    .footer-image-container {
+        width: 25px;
+        height: 25px;
+    }
+  }
+  
