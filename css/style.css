@@ -34,22 +34,38 @@
     color: grey;
 }
 
+.icon:hover span,
+#playlist-container .playlist-name:hover {
+    color: white;
+    cursor: pointer;
+}
+
 .playlist-name {
     padding: 8px 0;
 }
 
 .icon > img {
-    width: 12%;
-    color: white;
+    width: 13%;
+    filter: brightness(60%);
     vertical-align: bottom;
+}
+
+.icon:hover img {
+    cursor: pointer;
+    filter: brightness(100%);
 }
 
 .side-navbar div:nth-of-type(5) .fa-plus {
     font-size: 20px;
     padding: 10px;
     margin-right: 5px;
-    background-color: white;
+    background-color: lightgrey;
 } 
+
+.side-navbar div:nth-of-type(5):hover .fa-plus{
+    cursor: pointer;
+    background-color: white;
+}
 
 .bottom-navbar {
     width: 90%;
@@ -87,6 +103,11 @@
     font-size: 12px;
 }
 
+.call-to-action > button:hover {
+    cursor: pointer;
+    font-size: 13px;
+    padding: 9px 13px;
+}
   
         /* ----------- Main -----------  */
 
@@ -107,29 +128,42 @@
 .navbar-options li {
     display: inline-block;
     padding: 15px;
+}
+
+.navbar-options a {
     color: grey;
+    text-decoration: none;
+}
+
+.navbar-options li:hover a {
+    color: white;
 }
 
 /* Options section */
 
 .main-section {
     width: 100%;
+    padding: 0 10px;
 }
 
 .main-section h2 {
     color: white; 
-    padding: 10px 0 10px 40px;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 2em;
+    padding: 10px 0 10px 0;
     margin-top: 12px;
 }
 
 .main-section p {
     color: grey;
-    padding: 5px 0 10px 40px;
+    padding-bottom: 20px;
 }
 
 .option h3 {
     color: white;
-    padding: 5px 0 5px;
+    font-family: 'Gothic A1', sans-serif;
+    font-size: 1.1em;
+    padding: 20px 0 5px;
 }
 
 .option span {
@@ -145,7 +179,7 @@
 }
 
 .option-image-container {
-    width: 70%;
+    width: 80%;
     position: relative;
 }
 
@@ -155,6 +189,7 @@
 }
 
 .option:hover .overlay {
+    cursor: pointer;
     display: block;
 }
 
@@ -226,7 +261,12 @@
 }
 
 .footer-center-top .fa-play-circle {
-    font-size: 30px;
+    font-size: 2em;
+}
+
+.footer-center-top .fa-play-circle:hover {
+    font-size: 2.2em;
+    cursor: pointer;
 }
 
 .playbar {
@@ -303,6 +343,7 @@
 
 #profile-image {
     background-color: grey;
+    filter: brightness(100%);
     width: 25px;
     height: 25px;
     border-radius: 50%;
@@ -319,6 +360,12 @@
 #playlist-section,
 #user-home {
     color: white;
+}
+
+#playlist-section {
+    font-size: 1em;
+    font-family: 'Gothic A1', sans-serif;
+    font-weight: bold 700;
 }
 
 #playlist-container {
@@ -345,10 +392,22 @@
     color: grey;
 }
 
-#save-footer-option {
-    flex-direction: column;
+#footer-song-title span:hover {
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    color: white;
 }
 
 #save-footer-option {
-    color: lightgrey;
+    flex-direction: column;
+    color: grey;
+}
+
+#save-footer-option i {
+    padding: 3px;
+}
+
+#save-footer-option i:hover {
+    cursor: pointer;
+    color: white;
 }
