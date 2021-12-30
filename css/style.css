@@ -12,6 +12,7 @@
 
         /* ----------- Navbar laterale ----------- */
 
+
 .side-navbar {
     width: 230px;
     height: calc(100% - 80px);
@@ -19,6 +20,7 @@
     flex-direction: column;
     justify-content: space-between;
     overflow: hidden;
+    padding-left: 20px !important;
 }
 
 .icon {
@@ -311,7 +313,6 @@
     border-radius: 50%;
     width: 15px;
     height: 15px;
-    /* display: none; */
 }
 
 .playbar:hover .playbar-circle{
@@ -587,6 +588,3 @@
         width: calc(100% - 50px);
     }
   }
-
- 
-  
